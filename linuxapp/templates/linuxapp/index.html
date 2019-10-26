@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test Boot</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="django form with utf-8">
+    <meta name="author" content="wichit2s">
+    
+    {% load static %}
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <style>
+      .filled {
+        width: 80%;
+        padding: 5px;
+      }
+      .spacing {
+        padding: 1em;
+      }
+    </style>
+  </head>
+
+  <body background="https://image.freepik.com/free-psd/fiddle-leaf-fig-room_53876-89633.jpg">
+  </body>
+  <body>
+    <br>
+    <nav>  <center><h1> Web Services </h1> </nav></center>
+    <div>
+        <section class="filled">
+            <center><form action="index" method="POST" enctype="multipart/form-data;charset=UTF-8">
+            {% csrf_token %}
+            <div class="spacing"><input class="filled" type="text" name="icon" value="FIRSTNAME : "/></div>
+            <div class="spacing"><input class="filled" type="text" name="title" value="LSATNAME : "/></div>
+            <div class="spacing"><input class="filled" type="text" name="detail" value="ID : "/></div>
+            <center><button class="button">SUBMIT </button></center>
+        </form></center>
+      </section>
+      <div><br>
+       <center><table style="width:80%; border: 1px solid black; padding: 1em;">
+        <tr>
+          <th>NAME:</th>
+          <th>LSATNAME:</th>
+          <th>ID:</th>
+        </tr>
+        {% for s in services %}
+        <tr>
+          <td> <i class="fa {{s.icon}}"></i> {{ s.icon }}</td>
+          <td>{{ s.title }}</td>
+          <td>{{ s.detail }}</td>
+        </tr>
+        {% endfor %}
+      </table></center>
+      </div>
+      <html>
+<body>
+    </div>
+    <html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+</html>
+    <br>
+  </body>
+
+</html>

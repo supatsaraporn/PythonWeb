@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(204, 170, 183);
+  border: none;
+  border-radius: 15px;
+
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0 5px rgb(253, 246, 246);
+  transform: translateY(4px);
+}
+</style>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="image" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">IMAGE</a>
+    <a href="about" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">ABOUT</a>
+    <a href="index" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">WEB SERVICES</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="index" class="w3-bar-item w3-button w3-padding-large">IMAGE</a>
+    <a href="about" class="w3-bar-item w3-button w3-padding-large">ABOUT</a>
+    <a href="index" class="w3-bar-item w3-button w3-padding-large">WEB SERVICES</a>
+    
+  </div>
+</div>
+<body>
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>IMAGE VIEW</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">GO!!!!</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="https://image.freepik.com/free-photo/landscape-image-mt-fuji-lake-kawaguchiko-sunrise-fujikawaguchiko-japan_29505-774.jpg" width="1500" height="1000">
+
+  </div>
+
+
+</div>
+<body><br>
+    <center><a href="#"><button class="button"> UP ON THE PAGE </button></a></center>
+</body>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+ 
+<script>
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
